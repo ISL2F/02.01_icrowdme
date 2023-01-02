@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="stylesheet" href="./scc/styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans:300,regular,500,600,700,800,300italic,italic,500italic,600italic,700italic,800italic"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Nunito:regular&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Montserrat:regular"
+      rel="stylesheet"
+    />
+    <title>icrowdme</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <header class="header">
+        <div class="header__container">
+          <div class="header__logo">
+            <img
+              src="./img/icons/Logo.png"
+              alt="icrowd-me"
+              class="logo-header"
+            />
+            <div class="header-logo__text">Crowdme</div>
+          </div>
+          <div class="header__menu menu-header">
+            <nav class="menu-header__nav">
+              <ul class="menu-header__list">
+                <li class="menu-header__item">
+                  <a href="" class="menu-header__link">home</a>
+                </li>
+                <li class="menu-header__item">
+                  <a href="" class="menu-header__link">how it works</a>
+                </li>
+                <li class="menu-header__item">
+                  <a href="" class="menu-header__link">discover a project</a>
+                </li>
+                <li class="menu-header__item">
+                  <a href="" class="menu-header__link">blog</a>
+                </li>
+                <li class="menu-header__item">
+                  <a href="" class="menu-header__link">find out more</a>
+                </li>
+              </ul>
+            </nav>
+
+            <a href="" class="button-login">login</a>
+            <div class="menu-header__burger">
+              <span></span>
+            </div>
+          </div>
+        </div>
+      </header>
+      <main class="main">
+        <section class="become-member">
+          <div class="become-member__swiper swiper">
+            <img class="main_bg" src="./img/main_bg.png" alt="" />
+            <img class="filter" src="./img/filter.png" alt="" />
+
+            <div class="become-member__container">
+              <div class="become-member__swiper">
+                <!-- Slides -->
+                <div class="become-member__slide swiper-slide">
+                  <div class="become-member__content">
+                    <h1 class="become-member__title">
+                      <span>Intellectual Property has the Shelf Life</span
+                      ><br />of a Banana.
+                    </h1>
+                    <a href="" class="become-member__button">Become a Member</a>
+                  </div>
+                </div>
+                <div class="become-member__slide swiper-slide">
+                  <div class="become-member__content">
+                    <h1 class="become-member__title">
+                      <span>Intellectual Property has the Shelf Life</span
+                      ><br />of a Banana.
+                    </h1>
+                    <a href="" class="become-member__button">SLIDE 2</a>
+                  </div>
+                </div>
+                <div class="become-member__slide swiper-slide">
+                  <div class="become-member__content">
+                    <h1 class="become-member__title">
+                      <span>Intellectual Property has the Shelf Life</span
+                      ><br />of a Banana.
+                    </h1>
+                    <a href="" class="become-member__button">SLIDE 3</a>
+                  </div>
+                </div>
+              </div>
+
+              <div
+                class="become-member__swipe-left"
+                onclick="plusSlides(-1)"
+                alt=""
+              >
+                <img src="./img/icons/left.png" alt="" />
+              </div>
+              <div class="become-member__swipe-right" onclick="plusSlides(1)">
+                <img src="./img/icons/right.png" alt="" />
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="our-work">
+          <div class="our-work__container">
+            <div class="our-work__body">
+              <div class="our-work__content">
+                <div class="our-work__icon">
+                  <img src="./img/icons/our_work.png" alt="" />
+                </div>
+                <h2 class="our-work__title">
+                  Our work is the presentation<br />of our capabilities.
+                </h2>
+                <div class="our-work__text">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  Ut enim ad minim veniam, quis nostrud exercitation
+                  <br />
+                  <br />
+
+                  Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
+                  aute irure dolor in reprehenderit in voluptate velit esse
+                  cillum dolore eu fugiat nulla pariatur.
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="simple">
+          <div class="simple__container">
+            <div class="simple__tab-buttons">
+              <div
+                class="tab-button tab-button__active"
+                onclick="simpleChange(event, '1')"
+              >
+                <div class="tab_number">1</div>
+                <div class="tab_title">Simple</div>
+              </div>
+              <div class="tab-button" onclick="simpleChange(event, '2')">
+                <div class="tab_number">2</div>
+                <div class="tab_title">Transparent</div>
+              </div>
+              <div class="tab-button" onclick="simpleChange(event, '3')">
+                <div class="tab_number">3</div>
+                <div class="tab_title">Collaborative</div>
+              </div>
+            </div>
+            <div class="simple__tabs tabs-simple">
+              <div class="tabs-simple__item active" id="1">
+                <div class="tabs-simple__icon">
+                  <img src="./img/icons/glasses.png" alt="" />
+                </div>
+                <div class="simple-tabs__content">
+                  <div class="simple-tabs__title">
+                    Browse projects, like booking a hotel online !
+                  </div>
+                  <div class="simple-tabs__text">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                    sed do eiusmod tempor incididunt ut labore et do lore magna
+                    aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                    ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                  </div>
+                </div>
+              </div>
+              <div class="tabs-simple__item" id="2">
+                <div class="tabs-simple__icon">
+                  <img src="./img/icons/glasses.png" alt="" />
+                </div>
+                <div class="simple-tabs__content">
+                  <div
+                    class="simple-tabs__title"
+                    style="color: rgb(129, 9, 142)"
+                  >
+                    Browse projects, like booking a hotel online !
+                  </div>
+                  <div class="simple-tabs__text" style="color: red">
+                    2 Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                    sed do eiusmod tempor incididunt ut labore et do lore magna
+                    aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                    ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                  </div>
+                </div>
+              </div>
+              <div class="tabs-simple__item" id="3">
+                <div class="tabs-simple__icon">
+                  <img src="./img/icons/glasses.png" alt="" />
+                </div>
+                <div class="simple-tabs__content">
+                  <div class="simple-tabs__title" style="color: aqua">
+                    Browse projects, like booking a hotel online !
+                  </div>
+                  <div class="simple-tabs__text" style="color: blue">
+                    3 Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                    sed do eiusmod tempor incididunt ut labore et do lore magna
+                    aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                    ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="submit-project">
+          <div class="submit-project__container">
+            <div class="left-part-submit__content">
+              <div class="left-part-submit__icon">
+                <img src="./img/left_part.png" alt="" />
+              </div>
+              <div class="left-part-submit__body">
+                <h3 class="left-part-submit__title">Find Properties</h3>
+                <div class="left-part-submit__text">
+                  Sign up to browse the portfolio. Your journey to becoming a
+                  real estate baron starts here.
+                </div>
+                <a href="" class="left-part-submit__button button"
+                  >Become A Member</a
+                >
+              </div>
+            </div>
+            <div class="right-part-sumbit__content">
+              <div class="right-part-submit__icon">
+                <img src="./img/right_part.png" alt="" />
+              </div>
+              <div class="right-part-submit__body">
+                <h3 class="right-part-submit__title">Find Buyers</h3>
+                <div class="right-part-submit__text">
+                  Sign up to browse the portfolio. Your journey to becoming a
+                  real estate baron starts here.
+                </div>
+                <a href="" class="right-part-submit__button button"
+                  >Submit Your Project</a
+                >
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="featured-projects">
+          <div class="featured-projects__container">
+            <div class="featured-projects__top-part">
+              <div class="featured-projects__body">
+                <h2 class="featured-projects__title">Featured Projects</h2>
+                <div class="featured-projects__text">
+                  Brief details of new and popular projects. To view full
+                  listings, you will be required to sign up and become a member.
+                </div>
+              </div>
+              <a href="" class="featured-projects__button">Become a Member</a>
+            </div>
+            <div class="featured-projects__bot-part">
+              <div class="featured-projects__card">
+                <div class="featured-projects__image card-featured-projects">
+                  <div class="card-featured-projects__new">NEW</div>
+                  <img src="./img/card_1.png" alt="" />
+                  <a href="" class="card-featured-projects__link-img"
+                    >From GBP 3600</a
+                  >
+                </div>
+                <div class="card-featured-projects__body">
+                  <div class="card-featured-projects__title">
+                    Ontario Tower , LONDON
+                  </div>
+                  <div class="card-featured-projects__text">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                    sed do eiusmod tempor incididunt ut labore et dolore magna
+                    aliqua.
+                  </div>
+                  <div class="card-featured-projects__line"></div>
+                  <div class="card-featured-projects__fund-count">
+                    <div class="card-featured-projects__fund-percent">
+                      10% Funded
+                    </div>
+                    <div class="card-featured-projects__days">8 Days Left</div>
+                  </div>
+                  <a href="" class="card-featured-projects__button"
+                    >See Project Details</a
+                  >
+                </div>
+              </div>
+              <div class="featured-projects__card">
+                <div class="featured-projects__image card-featured-projects">
+                  <div class="card-featured-projects__new">NEW</div>
+                  <img src="./img/card_2.png" alt="" />
+                  <a href="" class="card-featured-projects__link-img"
+                    >From GBP 3600</a
+                  >
+                </div>
+                <div class="card-featured-projects__body">
+                  <div class="card-featured-projects__title">
+                    Ontario Tower , LONDON
+                  </div>
+                  <div class="card-featured-projects__text">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                    sed do eiusmod tempor incididunt ut labore et dolore magna
+                    aliqua.
+                  </div>
+                  <div class="card-featured-projects__line sixty"></div>
+                  <div class="card-featured-projects__fund-count">
+                    <div class="card-featured-projects__fund-percent">
+                      60% Funded
+                    </div>
+                    <div class="card-featured-projects__days">8 Days Left</div>
+                  </div>
+                  <a href="" class="card-featured-projects__button"
+                    >See Project Details</a
+                  >
+                </div>
+              </div>
+              <div class="featured-projects__card">
+                <div class="featured-projects__image card-featured-projects">
+                  <div class="card-featured-projects__new">NEW</div>
+                  <img src="./img/card_3.png" alt="" />
+                  <a href="" class="card-featured-projects__link-img"
+                    >From GBP 3600</a
+                  >
+                </div>
+                <div class="card-featured-projects__body">
+                  <div class="card-featured-projects__title">
+                    Ontario Tower , LONDON
+                  </div>
+                  <div class="card-featured-projects__text">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                    sed do eiusmod tempor incididunt ut labore et dolore magna
+                    aliqua.
+                  </div>
+                  <div class="card-featured-projects__line"></div>
+                  <div class="card-featured-projects__fund-count">
+                    <div class="card-featured-projects__fund-percent">
+                      10% Funded
+                    </div>
+                    <div class="card-featured-projects__days">8 Days Left</div>
+                  </div>
+                  <a href="" class="card-featured-projects__button"
+                    >See Project Details</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="be-part">
+          <div class="be-part__bg">
+            <img src="./img/bg_section6.png" alt="" class="" />
+          </div>
+          <div class="be-part__container">
+            <h2 class="be-part__title">
+              Be Part of a Growing International Community
+            </h2>
+            <div class="be-part__text">
+              One of the challenges in networking is everybody thinks it's
+              making cold calls to strangers. Actually, it's the people who
+              already have strong trust relationships with you
+            </div>
+            <div class="be-part__body">
+              <div class="be-part__card card-be-part">
+                <div class="card-be-part__review">
+                  <div class="card-be-part__title">One of the Best</div>
+                  <div class="card-be-part__text">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                    sed do eiusmod taempor incididunt ut labore et dolore magna
+                    aliqua.
+                  </div>
+                </div>
+                <div class="card-be-part__author">
+                  <div class="card-be-part__icon">
+                    <img src="./img/be_part_icon1.png" alt="" />
+                  </div>
+                  <div class="card-be-part__name">David Beckham</div>
+                </div>
+              </div>
+              <div class="be-part__card card-be-part">
+                <div class="card-be-part__review">
+                  <div class="card-be-part__title">Exellent Service</div>
+                  <div class="card-be-part__text">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                    sed do eiusmod taempor incididunt ut labore et dolore magna
+                    aliqua.
+                  </div>
+                </div>
+                <div class="card-be-part__author">
+                  <div class="card-be-part__icon">
+                    <img src="./img/be_part_icon2.png" alt="" />
+                  </div>
+                  <div class="card-be-part__name">David Beckham</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+      <footer class="footer">
+        <div class="footer__container">
+          <div class="footer__icons">
+            <img src="./img/foot_icons.svg" alt="" />
+          </div>
+          <div class="footer__copy">Copyright © 2001 - 2014 Cssauthor.com</div>
+        </div>
+      </footer>
+    </div>
+    <script src="./js/script.js"></script>
+  </body>
+</html>
